@@ -1,0 +1,245 @@
+@charset "utf-8";
+
+/* === global styles ==== */
+
+	body {
+		background-color: #222222;
+	}
+
+	.delay300 {
+	  -webkit-animation-delay: 300ms;
+	  -moz-animation-delay: 300ms;
+	  -ms-animation-delay: 300ms;
+	  animation-delay: 300ms;
+	}
+
+	a, a:hover, a:focus, a:visited {
+		text-decoration: none !important;
+	  cursor: pointer;
+	}
+
+	p.under {
+	  padding-top: 1.5em;
+	  padding-bottom: 1.5em !important;
+	}
+
+	p.lead {
+	  font-weight: normal !important;
+	}
+
+	.section-header{
+	  text-align: center !important;
+	}
+
+	.color {
+	  font-family: 'LucidaHand', "Lucida Sans", Verdana, sans-serif;
+	  color: #ff0c00;
+	  padding-right: 4px;
+	}
+
+	#and {
+	  color: #ff0c00;
+	}
+
+	button, button:active, button:hover, button:visited, .btn, .btn:active, .btn:hover, .btn:visited {
+	  outline: none !important;
+	  text-decoration: none !important;
+	}
+
+	.vcenter {
+	  display: inline-block;
+	  float: none;
+	  vertical-align: middle;
+	}
+
+/* === sidebar styles ==== */
+
+	#aside {
+		float: none;
+		display: table-cell;
+		background-color: #e91e63;
+		vertical-align: top;
+		height: 100vh;
+	}
+
+	.animation {
+		-webkit-animation-fill-mode: both;
+		-moz-animation-fill-mode: both;
+		-ms-animation-fill-mode: both;
+		animation-fill-mode: both;
+		-webkit-transition-timing-function: ease-in;
+		-moz-transition-timing-function: ease-in;
+		-ms-transition-timing-function: ease-in;
+		transition-timing-function: ease-in;
+		-webkit-nimation-duration: 750ms;
+		-moz-nimation-duration: 750ms;
+		-ms-nimation-duration: 750ms;
+		animation-duration: 750ms;
+	}
+
+	#aside .btn {
+		background-color: #e91e63;
+		border-color: #FFF;
+		font-size: 1.0em !important;
+		color: #FFF;
+		margin-top: 20px;
+	}
+
+	#aside .btn:hover {
+		background-color: #FFF;
+		border-color: #333;
+		color: #e91e63;
+	}
+
+	a .glyphicon {
+		padding-right: 8px;
+	}
+
+/* === main content styles ==== */
+	#wrapper {
+		display: table;
+	}
+
+	#content {
+		display: table-cell;
+		background-color: #222222;
+		float: none;
+		padding: 2em 2em 0 0;
+		font-family: 'FortBook', Verdana, sans-serif;
+		letter-spacing: -0.01em;
+		color: #fff;
+	}
+
+	#content h3 {
+	    margin: 5px 0 15px 0 !important;
+	}
+
+	#content h4 {
+	    margin-bottom: 5px !important;
+	}
+
+	#content p {
+	    margin-bottom: 1.75em !important;
+	}
+
+	#content .btn:hover {
+	    background-color: rgba(0,131,221,0.5);
+	    color: #fff;
+	}
+
+	#content .btn:after,
+	#content .btn:focus {
+	    background-color: #fff;
+	    color: #333;
+	}
+
+	#detail-list span {
+		padding-right: 0.5em;
+	}
+
+/* === footer styles ==== */
+	.footer {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		height: auto;
+		background-color: #212121;
+		font-family: 'OpenSansLt', "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, sans-serif;
+		font-size: 14px;
+		font-weight: 700;
+		color: #fff;
+		padding-bottom: 1.0em;
+		z-index: 1;
+	}
+
+	#footer.container-fluid {
+	  	padding: 0 15px;
+	}
+
+	#footer .row div {
+		padding-top: 30px;
+
+	}
+
+	#footer a {
+	  	color: #fff;
+	}
+
+	#footer-text a {
+	  	padding-right: 1.25em;
+		float: right;
+	}
+
+	#footer-text a:hover {
+	  	color: #ff0c00 !important;
+	}
+
+	#smallSocial {
+		padding-top: 18px !important;
+	}
+
+	#smallSocial p {
+		margin-bottom: 0 !important;
+	}
+
+	.socialShare {
+		margin-top: 0 !important;
+	}
+
+	.socialPlugin .showSocialButtons {
+		color: #fff !important;
+	}
+
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+ 	.btn-responsive {
+    	padding: 6px 12px;
+    	font-size: 100%;
+    	line-height: 2.5;
+  	}
+}
+
+@media screen and (max-width: 768px) {
+	.btn-responsive {
+    	padding: 2px 6px;
+    	font-size: 90%;
+    	line-height: 2.5;
+    	border-radius: 3px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+
+	.col-xs-12 {
+		margin-left: auto !important;
+		margin-right: auto !important;
+		text-align: center;
+
+	}
+
+	.hiddenMS {
+		display: none;
+	}
+
+	#footer-text,
+	#copy {
+		text-align: center !important;
+	}
+
+	#footer-text a {
+		float: none !important;
+	}
+
+	#smallSocial {
+		padding-top: 30px !important;
+	}
+
+	#footer-text {
+		padding: 20px 0 20px 15px !important;
+	}
+
+	#copy {
+		padding: 0 0 30px 0 !important;
+	}
+
+}

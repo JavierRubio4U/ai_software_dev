@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+
+  <head>
+    	<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<meta name="description" content="infused Ideas is a web and mobile application design and development studio. We build responsive web sites and mobile applications integrating design best practices and cutting edge technologies to create great user experiences.">
+        <meta property="og:type" content="website" />
+        <meta property="canonical" href="http://infusedideas.com/" />
+    	<meta property="og:url" content="http://infusedideas.com/" />
+    	<meta property="og:site_name" content="infused Ideas" />
+    	<meta property="og:title" content="infused Ideas" />
+    	<meta property="og:description" content="infused Ideas is a web and mobile application design and development studio." />
+    	<meta property="og:image" content="http://infusedideas.com/images/image.jpg" />
+    	<meta name="author" content="infused Ideas">
+
+    	<!-- bookmark icon -->
+    	<link rel="icon" href="images/new-logo-black.png">
+
+    	<title>B&amp;S Murphy</title>
+
+    	<!-- style sheets -->
+    	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    	<link href="css/typo.css" rel="stylesheet" type="text/css">
+        <link href="css/custom.css" rel="stylesheet" type="text/css">
+
+    	<!-- animation css -->
+    	<link href="css/animate.css" rel="stylesheet" type="text/css">
+
+        <!-- slider css -->
+        <link href="css/swiper.css" rel="stylesheet" type="text/css">
+
+        <!-- font style sheets -->
+    	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+        <!-- modernizr for updates to latest standards -->
+    	<script src="js/modernizr.custom.04787.js"></script>
+
+    	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    	<!--[if lt IE 9]>
+    	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    	<![endif]-->
+
+    	<!-- google analytics script -->
+        <script></script>
+</head>
+
+<body class="animated fadeIn bfade" style="overflow:hidden !important;">
+
+    <div id="preloader">
+        <div id="status">&nbsp;</div>
+    </div>
+
+    <header class="banner navbar navbar-default" role="banner">
+        <div class="affixPanel">
+          <div class="container">
+            <div class="navbar-inner" style="margin-top:80px;">
+              <h2 class="brand hidden-xs">B<small>&amp;</small><span>S</span> Murphy</h2>
+              <button id="navBtn" type="button" class="navbar-toggle menuBtn" data-toggle="collapse" data-target=".navbar-collapse">
+                <div class="sandwich">
+                  <div id="burger" class="sandwichBars closed">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                  </div>
+                </div>
+             	</button>
+              <nav class="collapse navbar-collapse" role="navigation">
+                <ul id="main-menu" class="nav navbar-nav navbar-right">
+                  <li><a href="index.html" class="navColor1">art ware</a></li>
+                  <li><a href="tech.html" class="navColor2">technology</a></li>
+                  <li><a href="shop.html" class="navColor3">shop</a></li>
+                  <li><a href="contact.html" class="navColor4">contact</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+    </header>
+
+    <div id="slider" class="swiper-container">
+      <div class="swiper-wrapper">
+          <div class="swiper-slide slide1">
+            <h1 id="slide1" class="tale loc animated zoomIn">art ware</h1>
+          </div>
+          <div class='swiper-slide slide2'>
+            <h1 id="slide2" class="tale loc4 animated fadeInUp">technology</h1>
+          </div>
+          <div class='swiper-slide slide3'>
+            <h1 id="slide3" class="tale loc2 animated fadeInDown">shop</h1>
+          </div>
+          <div class='swiper-slide slide4'>
+            <h1 id="slide4" class="tale loc3 animated fadeInUp">contact</h1>
+          </div>
+      </div>
+      <div class='swiper-button-next swiper-button-white'></div>
+      <div class='swiper-button-prev swiper-button-white'></div>
+    </div>
+
+    <footer class="footer">
+      <div id="footer" class="container-fluid">
+        <div class="row">
+          <div id="footer-text" class="col-xs-12 col-sm-4">
+            <a href="#footer">My Account</a><a href="#footer">Support</a>
+          </div>
+          <div id="cpwrite"  class="col-xs-12 col-sm-4 text-center">
+            <span>Copyright &copy; infused Ideas 2016</span>
+          </div>
+          <div id="socialBar" class="col-xs-12 col-sm-4">
+            <a href="https://www.facebook.com/infusedideas/" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.google.com/+Infusedideas1" target="_blank"><i class="fa fa-google-plus"></i></a>
+            <a id="lastSocial" href="https://www.instagram.com/sportingkc/" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="https://twitter.com/Royals" target="_blank"><i class="fa fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+	<!-- core JavaScripts
+  ======================================================================================== -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+      <script src="js/ie10-viewport-bug-workaround.js"></script>
+
+      <!-- preloader -->
+  	  <script type="text/javascript">
+          //<![CDATA[
+              $(window).load(function() { // makes sure the whole site is loaded
+                  $('#status').fadeOut(); // will first fade out the loading animation
+                  $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+                  $('body').delay(350).css({'overflow':'visible'});
+              })
+          //]]>
+      </script>
+
+      <!-- mobile touch -->
+      <script src="js/jquery.mobile.custom.min.js"></script>
+
+      <!-- scripts to remove click delays in touch UI's
+    	<script src="js/fastclick.js"></script>
+      <script>
+    		$(function() {
+    			FastClick.attach(document.body);
+    		});
+    	</script> -->
+
+      <!-- mobile menu button script -->
+      <script>
+        $(document).ready(function() {
+          $('#navBtn').click(function() {
+              if ($('#burger').hasClass('closed')) {
+                  $('#burger').removeClass('closed');
+                  $('#burger').addClass('open');
+              } else {
+                  $('#burger').removeClass('open');
+                  $('#burger').addClass('closed');
+              }
+          });
+        });
+    </script>
+
+    <!-- slider initialization and integration script -->
+    <script src="js/swiper.jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+          var swiper = new Swiper('.swiper-container', {
+            direction: 'horizontal',
+            speed: 1500,
+            autoplay: 4000,
+            autoplayDisableOnInteraction: false,
+            effect: 'fade',
+            grabCursor: false,
+            loop: true,
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+
+            onInit: function(swiper) {
+              $('.swiper-slide').each(function() {
+                if ($(this).index() === swiper.activeIndex) {
+                  $(this).find('.tale').fadeIn(400);
+                  $(this).find('.tale').css('animation-delay', '1500ms');
+                } else {
+                  $(this).find('.tale').fadeOut(0);
+                }
+                if (swiper.activeIndex === 1) {
+                  $('.navColor1').css('color', '#ff0c00');
+                } else {
+                  $('.navColor1').css('color', '#ffffff');
+                }
+              });
+            },
+            onSlideChangeEnd: function(swiper) {
+              $('.swiper-slide').each(function() {
+                if ($(this).index() === swiper.activeIndex) {
+                  $(this).find('.tale').fadeIn(400);
+                } else {
+                  $(this).find('.tale').fadeOut(0);
+                }
+              });
+            },
+            onSliderMove: function(swiper) {
+              $('.swiper-slide').each(function() {
+                if ($(this).index() === swiper.activeIndex) {
+                  $(this).find('.tale').fadeIn(400);
+                } else {
+                  $(this).find('.tale').fadeOut(0);
+                }
+                if (swiper.activeIndex === 5) {
+                  $('.navColor1').css('color', '#ff0c00');
+                } else {
+                  $('.navColor1').css('color', '#ffffff');
+                }
+              });
+            },
+            onTransitionStart: function(swiper) {
+              $('.swiper-slide').each(function() {
+                if (swiper.activeIndex === 2) {
+                  $('.navColor2').css('color', '#ff0c00');
+                } else {
+                  $('.navColor2').css('color', '#ffffff');
+                }
+                if (swiper.activeIndex === 3) {
+                  $('.navColor3').css('color', '#ff0c00');
+                } else {
+                  $('.navColor3').css('color', '#ffffff');
+                }
+                if (swiper.activeIndex === 4) {
+                  $('.navColor4').css('color', '#ff0c00');
+                } else {
+                  $('.navColor4').css('color', '#ffffff');
+                }
+                if (swiper.activeIndex === 5) {
+                  $('.navColor1').css('color', '#ff0c00');
+                } else {
+                  $('.navColor1').css('color', '#ffffff');
+                }
+              });
+            },
+            onSlidePrevStart: function(swiper) {
+              $('.swiper-slide').each(function() {
+                if (swiper.activeIndex === 1) {
+                  $('.navColor1').css('color', '#ff0c00');
+                } else {
+                  $('.navColor1').css('color', '#ffffff');
+                }
+                if (swiper.activeIndex === 2) {
+                  $('.navColor2').css('color', '#ff0c00');
+                } else {
+                  $('.navColor2').css('color', '#ffffff');
+                }
+                if (swiper.activeIndex === 3) {
+                  $('.navColor3').css('color', '#ff0c00');
+                } else {
+                  $('.navColor3').css('color', '#ffffff');
+                }
+                if (swiper.activeIndex === 4) {
+                  $('.navColor4').css('color', '#ff0c00');
+                } else {
+                  $('.navColor4').css('color', '#ffffff');
+                }
+              });
+            }
+        });
+      });
+    </script>
+
+    <!--  custom javascripts -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>

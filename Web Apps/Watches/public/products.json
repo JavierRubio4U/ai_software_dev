@@ -1,0 +1,173 @@
+[
+  {
+    "_id": "1",
+    "name": "Pilot Pro",
+    "price": "7,500",
+    "specs": {
+      "bezel": "Bidirectional",
+      "strap": "Leather",
+      "dialcolor": "Grey",
+      "movement": "Automatic",
+      "waterproof": "Yes",
+      "watchstyle": "Pilot"
+    },
+    "description": "The favorite watch of pilots and dedicated aviation fans laid a major milestone in its history by taking aboard Pilot Pro – the most reliable and high-performance selfwinding chronograph movement, entirely developed and produced in our workshops.",
+    "link": "watch1.html",
+    "image": {
+      "small": "images/products/thumbs/watch1a.jpg",
+      "large": "images/products/watch1.jpg"
+    }
+  },
+  {
+    "_id": "2",
+    "name": "Skeleton Gear",
+    "price": "10,000",
+    "specs": {
+      "bezel": "Smooth",
+      "strap": "Leather",
+      "dialcolor": "Grey",
+      "movement": "Automatic",
+      "waterproof": "No",
+      "watchstyle": "featureitem"
+    },
+    "description": "This watch is a special limited edition version that shows the delicate inner time movement mechanism within our precision crafted watches.",
+    "link": "watch2.html",
+    "image": {
+      "small": "images/products/thumbs/watch2a.jpg",
+      "large": "images/products/watch2.jpg"
+    }
+  },
+  {
+    "_id": "3",
+    "name": "Diver Pro",
+    "price": "5,250",
+    "specs": {
+      "bezel": "Bidirectional",
+      "strap": "Metal",
+      "dialcolor": "Black",
+      "movement": "Automatic",
+      "waterproof": "Yes",
+      "watchstyle": "Diver"
+    },
+    "description": "Our top of the line waterproof diver's watch. Guarenteed precision time and depth measurments up to a depth of 5,000 ft.",
+    "link": "watch3.html",
+    "image": {
+      "small": "images/products/thumbs/watch3a.jpg",
+      "large": "images/products/watch3.jpg"
+    }
+  },
+  {
+    "_id": "4",
+    "name": "B&S Statesman",
+    "price": "5,500",
+    "specs": {
+      "bezel": "Smooth",
+      "strap": "Leather",
+      "dialcolor": "Navy",
+      "movement": "Automatic",
+      "waterproof": "No",
+      "watchstyle": "Classic"
+    },
+    "description": "A classic and elegant time piece for the man about town. The modern design denotes a man of descerning taste and style.",
+    "link": "watch4.html",
+    "image": {
+      "small": "images/products/thumbs/watch4a.jpg",
+      "large": "images/products/watch4.jpg"
+    }
+  },
+  {
+    "_id": "5",
+    "name": "B&S Model A",
+    "price": "4,375",
+    "specs": {
+      "bezel": "Smooth",
+      "strap": "Metal",
+      "dialcolor": "Black",
+      "movement": "Automatic",
+      "waterproof": "No",
+      "watchstyle": "Classic"
+    },
+    "description": "A classic and elegant time piece for the man about town. The modern design denotes a man of descerning taste and style.",
+    "link": "watch5.html",
+    "image": {
+      "small": "images/products/thumbs/watch5a.jpg",
+      "large": "images/products/watch5.jpg"
+    }
+  },
+  {
+    "_id": "6",
+    "name": "B&S Navitimer",
+    "price": "5,500",
+    "specs": {
+      "bezel": "Bidirectional",
+      "strap": "Metal",
+      "dialcolor": "Black",
+      "movement": "Automatic",
+      "waterproof": "Yes",
+      "watchstyle": "Diver"
+    },
+    "description": "Our top of the line waterproof diver's watch. Guarenteed precision time and depth measurments up to a depth of 5,000 ft.",
+    "link": "watch6.html",
+    "image": {
+      "small": "images/products/thumbs/watch6a.jpg",
+      "large": "images/products/watch6.jpg"
+    }
+  },
+  {
+    "_id": "7",
+    "name": "B&S Transocean",
+    "price": "3,500",
+    "specs": {
+      "bezel": "Bidirectional",
+      "strap": "Metal",
+      "dialcolor": "Black",
+      "movement": "Automatic",
+      "waterproof": "No",
+      "watchstyle": "Pilot"
+    },
+    "description": "The favorite watch of pilots and dedicated aviation fans laid a major milestone in its history by taking aboard Pilot Pro – the most reliable and high-performance selfwinding chronograph movement, entirely developed and produced in our workshops.",
+    "link": "watch7.html",
+    "image": {
+      "small": "images/products/thumbs/watch7a.jpg",
+      "large": "images/products/watch7.jpg"
+    }
+  },
+  {
+    "_id": "8",
+    "name": "B&S Carrera",
+    "price": "8,350",
+    "specs": {
+      "bezel": "Smooth",
+      "strap": "Metal",
+      "dialcolor": "Black",
+      "movement": "Automatic",
+      "waterproof": "No",
+      "watchstyle": "Classic"
+    },
+    "description": "A classic and elegant time piece for the man about town. The modern design denotes a man of descerning taste and style.",
+    "link": "watch8.html",
+    "image": {
+      "small": "images/products/thumbs/watch8a.jpg",
+      "large": "images/products/watch8.jpg"
+    }
+  },
+  {
+    "_id": "9",
+    "name": "B&S Calibre",
+    "price": "3,750",
+    "specs": {
+      "bezel": "Smooth",
+      "strap": "Leather",
+      "dialcolor": "White",
+      "movement": "Automatic",
+      "waterproof": "No",
+      "watchstyle": "Classic"
+    },
+    "description": "A classic and elegant time piece for the man about town. The modern design denotes a man of descerning taste and style.",
+    "link": "watch9.html",
+    "image": {
+      "small": "images/products/thumbs/watch9a.jpg",
+      "large": "images/products/watch9.jpg"
+    }
+  }
+]
