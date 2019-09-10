@@ -1,0 +1,83 @@
+
+/* === global settings ==== */
+body {
+}
+
+.bfade {
+    -webkit-animation-duration: 500ms;
+    -moz-animation-duration: 500ms;
+    -ms-animation-duration: 500ms;
+    animation-duration: 500ms;
+}
+
+a, a:hover, a:focus, a:visited {
+	text-decoration: none !important;
+    cursor: pointer;
+}
+
+p.lead {
+  font-weight: normal !important;
+}
+
+.color {
+  font-family: 'LucidaHand', "Lucida Sans", Verdana, sans-serif;
+  color: #e91e63;
+  padding-right: 4px;
+}
+
+button, button:active, button:hover, button:visited, .btn, .btn:active, .btn:hover, .btn:visited {
+  outline: none !important;
+  text-decoration: none !important;
+}
+
+/* === modal styles ==== */
+.modal-open {
+	padding-right: 0 !important;
+}
+
+.modal-body .img-responsive {
+	width: 100%;
+}
+
+.modal-content .modal-header {
+    padding-top: 0.5em !important;
+}
+
+#xmark {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 1.625em;
+  padding-top: 5px;
+}
+
+.modal-title {
+  font-family: OpenSansLt, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, sans-serif;
+  font-size: 2.0em;
+  letter-spacing: 2px;
+  color: #e91e63;
+  font-weight: 400;
+  text-align: center;
+}
+
+.modal-body {
+    padding-top: 0.6em !important;
+}
+
+#formWrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* === material style overrides ==== */
+
+.container {
+    width: 100% !important;
+}
+
+.navbar-brand {
+    font-size: 1.5em !important;
+}
+
+.navbar .navbar-nav li a {
+    font-size: 1.25em !important;
+    text-transform: none !important;
+}
