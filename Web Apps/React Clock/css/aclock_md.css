@@ -1,0 +1,87 @@
+/* react analog clock css */
+
+#clockwrapper {
+  position: relative;
+}
+
+#clock {
+  position: absolute;
+  top: 50px;
+  left: 38%;
+}
+
+.circle {
+  width: 200px;  /* size item */
+  height: 200px;  /* size item */
+  position: relative;
+  border: 10px solid #000000;  /* size item */
+  border-radius: 50%;
+  background: url('../images/logo-clock-face.png')  center no-repeat;
+  background-size: 200px 200px;  /* size item */
+}
+
+.face {
+  width: 100%;
+  height: 100%;
+}
+
+.face:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;  /* size item */  
+  height: 10px;  /* size item */
+  margin: -5px 0 0 -5px;  /* size item */
+  background: #1e2024;
+  -webkit- border-radius: 5px;
+  -moz- border-radius: 5px;
+  -ms- border-radius: 5px;
+  border-radius: 5px;  /* size item */
+  content: "";
+  display: block;
+}
+
+.hour {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -2px 0 -2px -25%;
+  padding: 2px 0 2px 25%;
+  background: #1f1f1f;
+  -webkit-transform-origin: 100% 50%;
+  -moz-transform-origin: 100% 50%;
+  -ms-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+}
+
+.minute {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -40% -2px 0;
+  padding: 40% 2px 0;
+  background: #1f1f1f;
+  -webkit-transform-origin: 50% 100%;
+  -moz-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+}
+
+.second {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -40% -1px 0;
+  padding: 40% 1px 0;
+  background: #D40000;
+  -webkit-transform-origin: 50% 100%;
+  -moz-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+}

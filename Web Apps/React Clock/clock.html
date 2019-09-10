@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+
+  <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="React analog clock for infused Ideas.">
+    <meta property="og:type" content="react component" />
+    <meta name="author" content="infused Ideas">
+
+	<!-- bookmark icon -->
+	<link rel="icon" href="images/new-logo-black.png">
+
+	<title>React Analog Clock</title>
+
+	<!-- style sheets -->
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+   	<link href="css/aclock_md.css" rel="stylesheet" type="text/css">	
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<div id="clockwrapper" class="col-xs-8 col-xs-offset-2">
+				<div id="clock"></div>
+			</div>
+		</div>
+	</div>
+
+    
+    <!--react analog clock script to insert into deployed page
+    <script type="text/babel" src="js/raclock.js"></script> -->
+
+	<!--for local placement in chrome - remove once deployed -->
+    <script type="text/babel">     	
+		var ClockFace=React.createClass({render: function(){var d=this.props.date; var millis=d.getMilliseconds(); var second=d.getSeconds() * 6 + millis * (6 / 1000); var minute=d.getMinutes() * 6 + second / 60; var hour=((d.getHours() % 12) / 12) * 360 + 90 + minute / 12; return ( <div className="circle "> <div className="face"> <div className="second" style={transform(rotate(second))}/> <div className="hour" style={transform(rotate(hour))}/> <div className="minute" style={transform(rotate(minute))}/> </div></div>);}});function transform(str){return{transform: str};}function rotate(deg){return 'rotate(' + deg + 'deg)';}var AnalogClock=React.createClass({getInitialState: function(){return{date: new Date()};}, componentDidMount: function(){this.start();}, start: function(){var self=this; (function tick(){self.setState({date: new Date()}); requestAnimationFrame(tick);}());}, render: function(){return <ClockFace date={this.state.date}/>;}}); ReactDOM.render(<AnalogClock/>, document.getElementById('clock'));
+    </script>
+
+	<!-- core JavaScripts
+        ===================================================================== -->
+    <script src="js/react-with-addons.min.js"></script>
+    <script src="js/react-dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.24/browser.min.js"></script>       
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+         
+</body>
+</html>
