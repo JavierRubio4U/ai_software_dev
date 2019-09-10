@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+
+  <head>
+      <meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<meta name="description" content="infused Ideas is a web and mobile application design and development studio. We build responsive web sites and mobile applications integrating design best practices and cutting edge technologies to create great user experiences.">
+      <meta property="og:type" content="website" />
+      <meta property="canonical" href="http://infusedideas.com/" />
+    	<meta property="og:url" content="http://infusedideas.com/" />
+    	<meta property="og:site_name" content="infused Ideas" />
+    	<meta property="og:title" content="infused Ideas" />
+    	<meta property="og:description" content="infused Ideas is a web and mobile application design and development studio." />
+    	<meta property="og:image" content="http://infusedideas.com/images/image.jpg" />
+    	<meta name="author" content="infused Ideas">
+
+    <!-- bookmark icon -->
+	   <link rel="icon" href="images/new-logo-black.png">
+
+    <title>Visit Us - BJ's Pints &amp; Phood</title>
+
+    <!-- style sheets -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/custom.css" rel="stylesheet" type="text/css">
+    <link href="css/typo.css" rel="stylesheet" type="text/css">
+    <link href="css/material.css" rel="stylesheet" type="text/css">
+    <link href="css/jquery-ui.css" rel="stylesheet" type="text/css">
+
+    <!-- google fonts -->
+	  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+    <!-- animation css -->
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
+
+    <!-- html5 video player style sheet -->
+    <link href="css/video-js.css" rel="stylesheet" type="text/css">
+
+    <!-- html5 video player JavaScript -->
+    <script src="js/video.js"></script>
+    <script>videojs.options.flash.swf = "js/video-js.swf"</script>
+
+    <!-- social buttons style sheets -->
+    <link href="css/bootstrap-social.css" rel="stylesheet" type="text/css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" >
+
+    <!-- modernizr for updates to latest standards -->
+    <script src="js/modernizr.custom.04787.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- google analytics script -->
+    <script></script>
+
+  </head>
+
+  <body class="animated fadeIn">
+
+      <div id="preloader">
+          <div id="status">&nbsp;</div>
+      </div>
+
+      <nav id="menu" class="slideout-menu animated hidden-sm hidden-md hidden-lg">
+        <header class="menu-header text-center">
+            <span id="bar-title">BJ's Pints <span id="and">&amp;</span> Phood</span>
+        </header>
+        <section class="menu-section">
+            <ul id="mobile-menu" class="menu-section-list">
+              <li><a href="index.html"><span class="glyphicon glyphicon-home"></span>about us</a></li>
+              <li><a href="menu.html"><span class="glyphicon glyphicon-list-alt"></span>menu</a></li>
+              <li class="active"><a href="visit.html"><span class="glyphicon glyphicon-map-marker"></span>visit us</a></li>
+            </ul>
+        </section>
+      </nav>
+
+  <main id="panel" class="slideout-panel">
+      <header class="container-fluid">
+        <div id="navWrapper" class="banner">
+          <nav class="navbar navbar-default navbar-top" role="navigation">
+              <div id="mobile-title" class="col-xs-12 text-center hidden-sm hidden-md hidden-lg">
+                  <img src="images/title.svg" alt="BJ's Pints &amp; Phood" />
+              </div>
+              <div class="col-sm-4 navbarPadding hidden-xs">
+                <a href="index.html" rel="home"><img src="images/title.svg" alt="BJ's Pints &amp; Phood" /></a>
+              </div>
+              <div id="main-menu-wrapper" class="col-sm-8 navbarPadding hidden-xs">
+                <div id="menu">
+                  <button id="navBtn" type="button" data-toggle="collapse" data-target="#main-menu" class="btn-sm menuBtn">
+                      <h3 id="menuTitle" class="closed">menu</h3>
+                      <div class="sandwich">
+                        <div id="burger" class="sandwichBars closed">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                        </div>
+                      </div>
+                  </button>
+                  <ul id="main-menu" class="nav navbar-nav navbar-right collapse width animated slideInRight text-center">
+                    <li><a href="index.html">about us</a></li>
+                    <li><a href="menu.html">menu</a></li>
+                    <li class="active"><a href="visit.html">visit us</a></li>
+                  </ul>
+              </div>
+            </div>  <!-- end main menu-->
+            <div class="hidden-sm hidden-md hidden-lg">
+                <button id="navBtn" type="button" class="btn-sm menuBtn slideout-button">
+                    <div class="sandwich">
+                      <div id="burger" class="sandwichBars closed">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                    </div>
+                </button>
+            </div>
+          </nav>
+        </div>
+    </header>
+
+    <div id="map-section" class="container-fluid">
+        <section id="open">
+             <div id="Gmap" class="row">
+                  <div class="col-xs-12" style="padding:0 !important;">
+                     <div id="map-canvas" style="height:350px; width:100%;"></div>
+                  </div>
+             </div>
+             <div id="map-info" class="row">
+                 <div id="address" class="col-xs-12 col-sm-3 text-center">
+                    <h3><i class="fa fa-map-marker"></i>location</h3>
+                    <span>14 E 65th Terrace</span><br>
+                    <span>Kansas City, MO 64113</span><br>
+                    <a id="phone" href="tel:9135381811">(913) 538-1811</a>
+                 </div>
+                 <div id="hours-open" class="col-xs-12 col-sm-3 text-center">
+                    <h3><i class="fa fa-clock-o"></i>hours</h3>
+                    <p id="days">sunday thru thursday</p>
+                    <p id="hours">11am - 9pm</p>
+                    <p id="days">friday &amp; saturday</p>
+                    <p id="hours">11am - 11pm</p>
+                 </div>
+                 <div id="us" class="col-xs-12 col-sm-6">
+                    <h3><span id="bar-title">BJ's Pints <span id="and">&amp;</span> Phood</span></h3>
+                    <p>We are a craft beer based gastropub that provides high-quality food using only locally sourced meats, vegetables and bread wrapped in a fun, friendly Irish pub style atmosphere. With the largest selection of craft beers in the Midwest, a good time is sure to be had by one and all!</p>
+                 </div>
+             </div>
+         </section>
+
+        <section id="book" class="container-fluid" data-sr="enter bottom">
+            <div id="reserveForm" class="col-sm-6 text-center">
+                <div id="titles">
+                     <h4>RESERVATIONS</h4>
+                 </div>
+                 <div class="row">
+                     <form class="form-inline text-center" method="post" action="">
+                         <div id="date" class="form-group col-sm-4 text-center">
+                             <label for="reservationDate">Date</label>
+                             <input id="reservationDate" class="form-control text-center" placeholder="MM/DD/YYYY" required>
+                         </div>
+                         <div id="time" class="form-group col-sm-4 cent">
+                             <label for="reservationTime">Time</label>
+                             <select id="reservationTime" class="form-control cent" required>
+                                 <option value="5:00 pm">5:00 pm</option>
+                                 <option value="6:00 pm">6:00 pm</option>
+                                 <option selected="selected" value="7:00 pm">7:00 pm</option>
+                                 <option value="8:00 pm">8:00 pm</option>
+                                 <option value="9:00 pm">9:00 pm</option>
+                                 <option value="10:00 pm">10:00 pm</option>
+                             </select>
+                         </div>
+                         <div id="size" class="form-group col-sm-4 text-center">
+                             <label for="reservPartySize">Party Size</label>
+                             <select id="reservPartySize" class="form-control" required>
+                                <option value="1 person">1 person</option>
+                                <option selected="selected" value="2 people">2 people</option>
+                                <option value="3 people">3 people</option>
+                                <option value="4 people">4 people</option>
+                                <option value="5 people">5 people</option>
+                                <option value="6 people">6 people</option>
+                                <option value="7 people">7 people</option>
+                                <option value="8 people">8 people</option>
+                             </select>
+                         </div>
+                     </form>
+                 </div>
+                 <a id="findTable" href="http://www.opentable.com/kansas-city-restaurants" target="_blank" class="btn btn-default btn-lg">FIND A TABLE</a>
+             </div>
+             <div id="reserveForm" class="col-sm-6">
+                <div id="titles" class="text-center second">
+                    <h4>PRIVATE EVENTS</h4>
+                    <p>We have spaces available for up to 50 guests.</p>
+                </div>
+                <form class="form-horizontal" method="post" action="">
+                  <input type="text" class="form-control" name="privateDiningName" size="50px" placeholder="NAME"required>
+                  <div class="row">
+                      <div class="col-sm-7">
+                        <input type="tel" class="form-control" name="privateDiningPhone" placeholder="PHONE" required>
+                      </div>
+                      <div class="col-sm-3 col-sm-offset-2">
+                        <input type="text" class="form-control cent" name="privateDiningDate" placeholder="DATE" required>
+                      </div>
+                 	</div>
+                  <div class="row text-center">
+                      <div class="col-sm-7" >
+                        <input type="email" class="form-control" name="privateDiningEmail" placeholder="EMAIL" required>
+                      </div>
+                      <div class="col-sm-3 col-sm-offset-2" >
+                     	  <input type="text" class="form-control cent" name="privateDiningGuests" placeholder="GUESTS" required>
+                      </div>
+             		  </div>
+                  <textarea class="form-control" rows="4" name="privateDiningComments" placeholder="COMMENTS / ADDITIONAL INFORMATION"></textarea>
+                </form>
+                <div class="text-center">
+                    <a id="submitBtn" type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModal1">SUBMIT</a>
+                </div>
+     	    </div>
+       </section>
+  </div>
+
+  <footer class="container-fluid panel-footer" data-sr="enter bottom">
+      <div class="row">
+          <div class="col-xs-12 col-sm-6 text-center">
+            <p id="copy">&copy; 2018 <span class="color">infused Ideas</span></p>
+            <span id="bot-text"><a href="about.html" target="_blank">about us</a> &middot; <a href="mailto:infusedIdeas@gmail.com">contact us</a> &middot; <a id="tcLink" data-toggle="modal" data-target="#myModal2">terms &amp; conditions</a></span>
+          </div>
+          <div id="socialBar" class="col-xs-12 col-sm-6 text-center">
+            <a href="https://www.facebook.com/martincitybrew/" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
+            <a href="https://twitter.com/Royals" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+            <a href="https://instagram.com/blancburgers/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+          </div>
+      </div>
+  </footer>
+</main>
+
+    <!-- core Javascripts
+    ==================================================================================  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/material.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $.material.init();
+      });
+    </script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- Preloader -->
+    <script type="text/javascript">
+        //<![CDATA[
+            $(window).load(function() { // makes sure the whole site is loaded
+                $('#status').fadeOut(); // will first fade out the loading animation
+                $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+                $('body').delay(350).css({'overflow':'visible'});
+            })
+        //]]>
+    </script>
+
+    <!-- mobile touch JavaScript -->
+    <script src="js/jquery.mobile.custom.min.js"></script>
+
+    <!-- scripts to remove click delays in touch UI's
+  	<script type='application/javascript' src='js/fastclick.js'></script>
+      <script>
+  		$(function() {
+  			FastClick.attach(document.body);
+  		});
+  	</script>  -->
+
+    <!-- menu script -->
+    <script>
+        $(document).ready(function() {
+            $('#navBtn').click(function() {
+                if ($('#burger').hasClass('closed')) {
+                    $('#burger').removeClass('closed');
+                    $('#burger').addClass('open');
+                    $('#menuTitle').addClass('open');
+                } else {
+                    $('#burger').removeClass('open');
+                    $('#burger').addClass('closed');
+                    $('#menuTitle').removeClass('open');
+                }
+            });
+        });
+    </script>
+
+    <!-- enable menu dropdown on hover -->
+    <script>
+          $(function(){
+            $(".dropdown").hover(
+                function() {
+                  $('.dropdown-menu', this).stop( true, true ).fadeIn("fast");
+                  $(this).toggleClass('open');
+                  $('b', this).toggleClass("caret caret-up");
+                },
+                function() {
+                  $('.dropdown-menu', this).stop( true, true ).fadeOut("fast");
+                  $(this).toggleClass('open');
+                  $('b', this).toggleClass("caret caret-up");
+            });
+          });
+    </script>
+
+    <!-- slideout mobile menu -->
+    <script src="js/slideout.min.js"></script>
+
+    <!-- jquery ui date picker Javascript -->
+   <script src="js/jquery-ui.min.js"></script>
+   <script>
+       $('#reservationDate').datepicker();
+   </script>
+
+    <!-- Google maps scripts  -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCo9M43aaL44cTg3724sH-OZm-nftgrrDY&callback=initMap"></script>
+    <script type="text/javascript">
+         var myCenter = new google.maps.LatLng(39.0096711,-94.5901);
+
+         function initialize() {
+         var mapOptions = {
+           center: new google.maps.LatLng(39.0096711,-94.5901),
+           zoom: 15
+         };
+         var map = new google.maps.Map(document.getElementById("map-canvas"),
+           mapOptions);
+         var marker=new google.maps.Marker({
+         position:myCenter,
+         });
+
+         marker.setMap(map);
+         }
+         google.maps.event.addDomListener(window, 'load', initialize);
+     </script>
+
+    <!-- scroll reveal JavaScript -->
+	  <script src="js/scrollReveal.min.js"></script>
+    <script>window.sr = new scrollReveal();</script>
+
+    <!-- custom JavaScripts -->
+    <script src="js/main.js"></script>
+
+    <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <button type="button" id="xmark" class="close" data-dismiss="modal">X</button><h2>Our Incredible Staff</h2>
+              </div>
+              <div class="modal-body">
+                  <div class="embed-responsive embed-responsive-16by9">
+                      <video controls preload="auto" width="auto" height="auto" webkitAllowFullScreen mozallowfullscreen allowFullScreen poster="videos/BBQ.jpg">
+                          <source src="videos/BBQ.mp4" type="video/mp4">
+                      </video>
+                  </div>
+              </div>
+              <div id="social" class="modal-footer">
+                  <a id="special" href="https://www.facebook.com/martincitybrew/" class="btn btn-social-icon btn-facebook" target="_blank" style="margin-botton:0px !important;"><i class="fa fa-facebook"></i></a>
+                  <a href="https://twitter.com/Royals" class="btn btn-social-icon btn-twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+                  <a href="https://instagram.com/blancburgers/" class="btn btn-social-icon btn-instagram" target="_blank"><i class="fa fa-instagram"></i></a>
+              </div>
+          </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        	<div class="modal-dialog modal-lg">
+          	<div class="modal-content">
+              	<div id="m2Header" class="modal-header">
+                  	<button type="button" id="xmark" class="close" data-dismiss="modal">X</button><h2>T &amp; C's</h2>
+                </div>
+            		<div class="modal-body">
+                  	<div class="embed-responsive embed-responsive-16by9">
+                        <div class="utubeWrapper">
+                      	     <iframe width="100%" height="390" src="https://www.youtube.com/embed/PKffm2uI4dk" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                        </div>
+                    </div>
+            		</div>
+          	</div><!-- /.modal-content -->
+        	</div><!-- /.modal-dialog -->
+   	</div><!-- /.modal -->
+
+  </body>
+</html>
