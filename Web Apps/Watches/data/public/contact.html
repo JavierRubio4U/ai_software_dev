@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+
+  <head>
+    	<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<meta name="description" content="infused Ideas is a web and mobile application design and development studio. We build responsive web sites and mobile applications integrating design best practices and cutting edge technologies to create great user experiences.">
+      <meta property="og:type" content="website" />
+      <meta property="canonical" href="http://infusedideas.com/" />
+    	<meta property="og:url" content="http://infusedideas.com/" />
+    	<meta property="og:site_name" content="infused Ideas" />
+    	<meta property="og:title" content="infused Ideas" />
+    	<meta property="og:description" content="infused Ideas is a web and mobile application design and development studio." />
+    	<meta property="og:image" content="http://infusedideas.com/images/image.jpg" />
+    	<meta name="author" content="infused Ideas">
+
+    	<!-- bookmark icon -->
+    	<link rel="icon" href="images/new-logo-black.png">
+
+    	<title>B&amp;S Murphy - Contact</title>
+
+    	<!-- style sheets -->
+    	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    	<link href="css/typo.css" rel="stylesheet" type="text/css">
+        <link href="css/tracers.css" rel="stylesheet" type="text/css">
+
+      <!-- animation style sheet -->
+      <link href="css/animate.css" rel="stylesheet" type="text/css">
+
+      <!-- font style sheets -->
+    	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+      <link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css'>
+
+      <!-- modernizr for updates to latest standards -->
+    	<script src="js/modernizr.custom.04787.js"></script>
+
+    	<!-- google analytics script -->
+      <script></script>
+</head>
+
+<body>
+
+  <div class="container-fluid">
+    <header>
+      <a href="index.html">Home</a>
+    </header>
+
+    <div class="pageTitle">
+      <div id="cool-text" class="row">
+        <div class="col-xs-12">
+          <h1><span>i</span><span>n</span><span>f</span><span>u</span><span>s</span><span>e</span><span>d</span>&nbsp;<span>i</span><span>d</span><span>e</span><span>a</span><span>s</span></h1>
+          <a href="mailto:contact@infusedideas.com" class="email"><h2><span>c</span><span>o</span><span>n</span><span>t</span><span>a</span><span>c</span><span>t</span>&nbsp;<span>u</span><span>s</span></h2></a>
+        </div>
+      </div>
+    </div>
+
+  <div id="container">
+      <div>
+      		<h1 id="h1" class="transition"><span class="letter-0">i</span><span class="letter-1">n</span><span class="letter-2">f</span><span class="letter-3">u</span><span class="letter-4">s</span><span class="letter-5">e</span><span class="letter-6">d</span> &nbsp; <span class="letter-7">I</span><span class="letter-8">d</span><span class="letter-9">e</span><span class="letter-10">a</span><span class="letter-11">s</span></h1>
+      		<h2 id="h2" class="transition"><span class="letter-0">C</span><span class="letter-1">o</span><span class="letter-2">n</span><span class="letter-3">t</span><span class="letter-4">a</span><span class="letter-5">c</span><span class="letter-6">t</span>&nbsp;<span class="letter-7">U</span><span class="letter-8">s</span></h2>
+      	</div>
+  </div>
+
+  <canvas id="canvas" width="100%" height="auto"></canvas>
+  <audio autoplay>
+      <source src="media/Time.mp3" type="audio/mp3" />
+  </audio>
+
+  <footer>
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <span class="by">Music by</span>&nbsp;<span class="pink"><strong>Pink Floyd</strong></span>&nbsp;&nbsp;
+        <a href="https://www.facebook.com/infusedideas/" target="_blank"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.google.com/+Infusedideas1" target="_blank"><i class="fa fa-google-plus"></i></a>
+        <a id="lastSocial" href="https://www.instagram.com/sportingkc/" target="_blank"><i class="fa fa-instagram"></i></a>
+        <a href="https://twitter.com/Royals" target="_blank"><i class="fa fa-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+</div>
+
+	<!-- core JavaScripts
+  ======================================================================================== -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+      <script src="js/ie10-viewport-bug-workaround.js"></script>
+
+      <!-- mobile touch -->
+      <script src="js/jquery.mobile.custom.min.js"></script>
+
+      <!-- scripts to remove click delays in touch UI's
+    	<script src="js/fastclick.js"></script>
+      <script>
+    		$(function() {
+    			FastClick.attach(document.body);
+    		});
+    	</script> -->
+
+      <!-- mobile menu button script -->
+      <script>
+        $(document).ready(function() {
+          $('#navBtn').click(function() {
+              if ($('#burger').hasClass('closed')) {
+                  $('#burger').removeClass('closed');
+                  $('#burger').addClass('open');
+              } else {
+                  $('#burger').removeClass('open');
+                  $('#burger').addClass('closed');
+              }
+          });
+        });
+    </script>
+
+    <!-- canvas scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.6.2/dat.gui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stats.js/r16/Stats.min.js"></script>
+    <script src="js/infused.js"></script>
+
+    <!-- fade in text script -->
+    <script>
+        $(document).ready(function() {
+          $('.pageTitle h1').each(function() {
+            $('span').addClass('animated fadeIn');
+          });
+          $('.pageTitle h2').each(function() {
+            $('span').addClass('animated fadeIn');
+          });
+        });
+    </script>
+
+</body>
+</html>

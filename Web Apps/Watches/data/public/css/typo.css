@@ -1,0 +1,83 @@
+/* === Typography === */
+
+@font-face {
+    font-family: TulpenOne;
+    src: url(../fonts/TulpenOne-Regular.ttf);
+    src: local(TulpenOne), local(TulpenOne),
+    url(../fonts/TulpenOne-Regular.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: RockSalt;
+    src: url(../fonts/RockSalt.ttf);
+    src: local(RockSalt), local(RockSalt),
+    url(../fonts/RockSalt.ttf) format(truetype);
+ }
+
+ @font-face {
+    font-family: Lato;
+    src: url(../fonts/Lato-BlackItalic.ttf);
+    src: local(Lato), local(Lato),
+    url(../fonts/Lato-BlackItalic.ttf) format(truetype);
+ }
+
+@font-face {
+    font-family: CartoonistHand;
+    src: url(../fonts/SF_Cartoonist_Hand.ttf);
+    src: local(CartoonistHand), local(CartoonistHand),
+    url(../fonts/SF_Cartoonist_Hand.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: OpenSansLt;
+    src: url(../fonts/OpenSans-Light.ttf);
+    src: local(OpenSansLt), local(OpenSansLt),
+    url(../fonts/OpenSans-Light.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: LucidaHand;
+    src: url(../fonts/Lucida-HandwritNrw.ttf);
+    src: local(LucidaHand), local(LucidaHand),
+    url(../fonts/Lucida-HandwritNrw.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: FortBook;
+    src: url(../fonts/Fort-Book.woff);
+    src: local(FortBook), local(FortBook),
+    url(../fonts/Fort-Book.woff) format(woff);
+}
+
+@font-face {
+    font-family: FortBold;
+    src: url(../fonts/Fort-Bold.woff);
+    src: local(FortBold), local(FortBold),
+    url(../fonts/Fort-Bold.woff) format(woff);
+}
+
+@font-face {
+    font-family: FortMedium;
+    src: url(../fonts/Fort-Medium.woff);
+    src: local(FortMedium), local(FortMedium),
+    url(../fonts/Fort-Medium.woff) format(woff);
+}
+
+@font-face {
+   font-family: Kilsonburg;
+   src: url(../fonts/kilsonburg.ttf);
+   src: local(Kilsonburg), local(Kilsonburg),
+   url(../fonts/kilsonburg.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: TrajanPro;
+    src: url(../fonts/TrajanPro-Regular.ttf);
+    src: local(TrajanPro), local(TrajanPro),
+    url(../fonts/TrajanPro-Regular.ttf) format(truetype);
+}
+
+  h1,h2,h3,h4,h5,h6,p,a, span, .btn-default {
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
+}

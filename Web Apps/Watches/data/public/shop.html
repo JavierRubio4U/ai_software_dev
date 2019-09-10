@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+
+  <head>
+    	<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<meta name="description" content="infused Ideas is a web and mobile application design and development studio. We build responsive web sites and mobile applications integrating design best practices and cutting edge technologies to create great user experiences.">
+        <meta property="og:type" content="website" />
+        <meta property="canonical" href="http://infusedideas.com/" />
+    	<meta property="og:url" content="http://infusedideas.com/" />
+    	<meta property="og:site_name" content="infused Ideas" />
+    	<meta property="og:title" content="infused Ideas" />
+    	<meta property="og:description" content="infused Ideas is a web and mobile application design and development studio." />
+    	<meta property="og:image" content="http://infusedideas.com/images/image.jpg" />
+    	<meta name="author" content="infused Ideas">
+
+    	<!-- bookmark icon -->
+    	<link rel="icon" href="images/new-logo-black.png">
+
+    	<title>Shop - B&amp;S Murphy</title>
+
+    	<!-- style sheets -->
+    	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    	<link href="css/typo.css" rel="stylesheet" type="text/css">
+        <link href="css/custom.css" rel="stylesheet" type="text/css">
+
+    	<!-- animation css -->
+    	<link href="css/animate.css" rel="stylesheet" type="text/css">
+
+        <!-- slick-carousel slider css -->
+        <link href="css/slick-slider.css" rel="stylesheet" type="text/css" />
+
+        <!-- font style links -->
+    	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+
+        <!-- modernizr for updates to latest standards -->
+    	<script src="js/modernizr.custom.04787.js"></script>
+
+    	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    	<!--[if lt IE 9]>
+    	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    	<![endif]-->
+
+    	<!-- google analytics script -->
+        <script></script>
+</head>
+
+<body id="shop" class="animated fadeIn bfade">
+
+    <div id="preloader">
+        <div id="status">&nbsp;</div>
+    </div>
+
+    <header id="header" class="banner navbar navbar-default" role="banner" >
+        <div class="affixPanel affix-top" data-spy="affix" data-offset-top="79" >
+          <div class="container-fluid" >
+            <div class="navbar-inner">
+              <h2 id="logo" class="brand hidden-xs">B<small>&amp;</small><span>S</span> Murphy</h2>
+              <button id="navBtn" type="button" class="hidden-sm hidden-md hidden-lg menuBtn" data-toggle="collapse" data-target=".navbar-collapse">
+                <div class="sandwich">
+                  <div id="burger" class="sandwichBars closed">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                  </div>
+                </div>
+             	</button>
+              <nav class="collapse navbar-collapse" role="navigation" >
+                <ul id="main-menu" class="nav navbar-nav navbar-right">
+                  <li><a href="index.html">art ware</a></li>
+                  <li><a href="tech.html">technology</a></li>
+                  <li class="active"><a href="shop.html">shop</a></li>
+                  <li><a href="contact.html">contact</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+    </header>
+
+    <section id="shop-header" class="container-fluid">
+        <div id="sliderWrapper" class="row">
+            <div class="col-xs-12">
+              <div id="Rslider"></div>
+            </div>
+        </div>
+        <div id="feature-items" class="row">
+            <div class="col-xs-6 col-sm-4 phone">
+              <div class="featInfo">
+                <img src="images/feat1.jpg" class="img-responsive" />
+                <div class="overlay text-center">
+                  <div class="overContent">
+                    <p>skeleton gear</p>
+                    <p>&#36;10,000</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hidden-xs col-sm-4">
+              <div class="featInfo">
+                <img src="images/feat2.jpg" class="img-responsive" />
+                <div class="overlay text-center">
+                  <div class="overContent">
+                    <p>diver pro</p>
+                    <p>&#36;5,250</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-4 phone">
+              <div class="featInfo">
+                <img src="images/feat3.jpg" class="img-responsive" />
+                <div class="overlay text-center">
+                  <div class="overContent">
+                    <p>pilot pro</p>
+                    <p>&#36;7,500</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="view-cart" class="container" style="padding:0 !important;">
+        <div class="row">
+            <div class="col-xs-12 col-sm-4">
+                <button type="button" class="btn btn-default viewCart">View Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="container all-products page">
+        <div  class="row">
+            <aside class="col-xs-3 col-sm-2 filters phonePlus">
+              <form toggle>
+                <div class="form-group filter-criteria">
+                  <label for="watchStyle" class="filterTitle">Style</label>
+                      <div class="checkbox">
+                          <label><input type="checkbox" name="watchstyle" value="featureitem" /><span class="checkbox-material"><span class="check"></span></span>Feature</label>
+                      </div>
+                      <div class="checkbox">
+                          <label><input type="checkbox" name="watchstyle" value="pilot" /><span class="checkbox-material"><span class="check"></span></span>Pilot</label>
+                      </div>
+                      <div class="checkbox">
+                          <label><input type="checkbox" name="watchstyle" value="diver" /><span class="checkbox-material"><span class="check"></span></span>Diver</label>
+                      </div>
+                      <div class="checkbox">
+                          <label><input type="checkbox" name="watchstyle" value="classic" /><span class="checkbox-material"><span class="check"></span></span>Classic</label>
+                      </div>
+                </div>
+                <div class="form-group filter-criteria">
+                  <label for="dialColor" class="filterTitle">Dial Color</label>
+                      <div class="checkbox">
+                          <label><input type="checkbox" name="dialcolor" value="grey" /><span class="checkbox-material"><span class="check"></span></span>Grey</label>
+                      </div>
+                      <div class="checkbox">
+                          <label><input type="checkbox" name="dialcolor" value="black" /><span class="checkbox-material"><span class="check"></span></span>Black</label>
+                      </div>
+                      <div class="checkbox">
+                          <label><input type="checkbox" name="dialcolor" value="navy" /><span class="checkbox-material"><span class="check"></span></span>Navy</label>
+                      </div>
+                      <div class="checkbox">
+                          <label><input type="checkbox" name="dialcolor" value="white" /><span class="checkbox-material"><span class="check"></span></span>White</label>
+                      </div>
+                </div>
+                <div class="form-group filter-criteria">
+                  <label for="strap" class="filterTitle">Strap</label>
+                      <div class="checkbox">
+                          <label><input type="checkbox" name="strap" value="leather" /><span class="checkbox-material"><span class="check"></span></span>Leather</label>
+                      </div>
+                      <div class="checkbox">
+                          <label><input type="checkbox" name="strap" value="metal" /><span class="checkbox-material"><span class="check"></span></span>Metal</label>
+                      </div>
+                </div>
+                <div class="form-group filter-criteria">
+                  <label for="waterproof" class="filterTitle">Waterproof</label>
+                      <div class="checkbox">
+                          <label><input type="checkbox" name="waterproof" value="yes" /><span class="checkbox-material"><span class="check"></span></span>Yes</label>
+                      </div>
+                      <div class="checkbox">
+                          <label><input type="checkbox" name="waterproof" value="no" /><span class="checkbox-material"><span class="check"></span></span>No</label>
+                      </div>
+                </div>
+                <div>
+                  <button type="button" class="btn btn-default btn-responsive">Clear Filters</button>
+                </div>
+              </form>
+            </aside>
+
+            <main id="watches" class="col-xs-9 col-sm-10 phoneWidth" role="main">
+              <ul class="products-list">
+                <script id="products-template" type="x-handlebars-template">​
+                    {{#each this}}
+                      <li data-index="{{_id}}">
+                        <div class="col-sm-4 text-center">
+                          <div class="panel panel-default">
+                            <div class="panel-body">
+                              <img src="{{image.small}}" class="img-responsive" alt="{{name}}"/>
+                            </div>
+                            <div class="panel-footer">
+                              <span>{{name}}</span><br />
+                              <span>&#36;{{price}}</span>
+                            </div>
+                          </div>
+                          <div class="highlight"></div>
+                        </div>
+                      </li>
+                    {{/each}}
+                </script> 
+              </ul>
+            </main>
+        </div>
+
+        <div id="cart" class="container miniCart animated">
+            <div class="cart1">
+                <button type="button" class="closeCart">&times;</button>
+                <h4 id="cart-note"></h4>
+                <ul class="cart-list">
+                </ul>
+                <hr />
+                <div class="row">
+                  <div class="col-xs-7">
+                      <p>Subtotal&#58;</p>
+                  </div>
+                  <div class="col-xs-5">
+                      &#36;<span id="subtotal"></span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-7">
+                      <p>Sales Tax&#58;</p>
+                  </div>
+                  <div class="col-xs-5">
+                      &#36;<span id="tax"></span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-7">
+                      <p>Total&#58;</p>
+                  </div>
+                  <div class="col-xs-5">
+                      &#36;<span id="total"></span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12">
+                      <button type="button" class="btn btn-default btn-lg checkout">Checkout</button>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="info">
+      <div class="container">
+        <div class="row hidden-xs">
+          <div class="col-xs-12 col-sm-3">
+            <h4>Support</h4>
+            <span><a href="#info">Contact Us</a></span><br />
+            <span><a href="#info">Store Locator</a></span><br />
+            <span><a href="#info">Shipping</a></span><br />
+            <span><a href="#info">Returns</a></span>
+          </div>
+          <div class="col-xs-12 col-sm-3">
+            <h4>My Account</h4>
+            <span><a href="#info">Login</a></span><br />
+            <span><a href="#info">Order History</a></span><br />
+            <span><a href="#info">Track Order</a></span><br />
+            <span><a href="#info">Cancel Order</a></span>
+          </div>
+          <div class="col-xs-12 col-sm-3">
+            <h4>Dealers</h4>
+            <span><a href="#info">Resources</a></span><br />
+            <span><a href="#info">Become a Dealer</a></span><br />
+            <span><a href="#info">Contact a Sales Rep</a></span><br />
+          </div>
+          <div class="col-xs-12 col-sm-3">
+            <h4>Company</h4>
+            <span><a href="#info">About Us</a></span><br />
+            <span><a href="#info">Careers</a></span><br />
+            <span><a href="#info">Investor Relations</a></span><br />
+            <span><a href="#info">Testimonials</a></span>
+          </div>
+        </div>
+        <div class="row hidden-sm hidden-md hidden-lg">
+          <div class="col-xs-12 text-center">
+            <div class="panel-group">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title"><a data-toggle="collapse" href="#support-collapse">Support</a></h4>
+                </div>
+                <div id="support-collapse" class="panel-collapse collapse">
+                  <div class="panel-body"><a href="#info">Contact Us</a></div>
+                  <div class="panel-body"><a href="#info">Store Locator</a></div>
+                  <div class="panel-body"><a href="#info">Shipping</a></div>
+                  <div class="panel-body"><a href="#info">Returns</a></div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title"><a data-toggle="collapse" href="#account-collapse">My Account</a></h4>
+                </div>
+                <div id="account-collapse" class="panel-collapse collapse">
+                  <div class="panel-body"><a href="#info">Login</a></div>
+                  <div class="panel-body"><a href="#info">Order History</a></div>
+                  <div class="panel-body"><a href="#info">Track Order</a></div>
+                  <div class="panel-body"><a href="#info">Cancel Order</a></div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title"><a data-toggle="collapse" href="#dealer-collapse">Dealers</a></h4>
+                </div>
+                <div id="dealer-collapse" class="panel-collapse collapse">
+                  <div class="panel-body"><a href="#info">Resources</a></div>
+                  <div class="panel-body"><a href="#info">Become a Dealer</a></div>
+                  <div class="panel-body"><a href="#info">Contact a Sales Rep</a></div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title"><a data-toggle="collapse" href="#company-collapse">Company</a></h4>
+                </div>
+                <div id="company-collapse" class="panel-collapse collapse">
+                  <div class="panel-body"><a href="#info">About Us</a></div>
+                  <div class="panel-body"><a href="#info">Careers</a></div>
+                  <div class="panel-body"><a href="#info">Investor Relations</a></div>
+                  <div class="panel-body"><a href="#info">Testimonials</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     <section class="panel-footer container-fluid" data-sr="enter bottom">
+		    <br>
+        <div class=row>
+          <div class="col-xs-12 text-center">
+            <a href="https://www.facebook.com/infusedideas/" target="_blank" class="smBadge facebook"><i class="fa fa-facebook"></i></a>
+             <a href="https://www.google.com/+Infusedideas1" target="_blank" class="smBadge gplus"><i class="fa fa-google-plus"></i></a>
+             <a href="https://www.instagram.com/sportingkc/" target="_blank" class="smBadge instagram"><i class="fa fa-instagram"></i></a>
+             <a href="https://twitter.com/Royals" target="_blank" class="smBadge twitter"><i class="fa fa-twitter"></i></a>
+          </div>
+        </div>
+        <br/>
+        <div class="row">
+          <div class="col-xs-12 text-center">
+            <span>Copyright &copy; 2016 <span class="color">infused Ideas</span></span>
+          </div>
+        </div>
+        <br>
+  	</section>
+
+
+	<!-- core JavaScripts
+    ======================================================================================== -->
+      <script src="js/react-with-addons.min.js"></script>
+      <script src="js/react-dom.min.js"></script>
+      <script src="js/react-slick.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.24/browser.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+      <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+      <script src="js/ie10-viewport-bug-workaround.js"></script>
+
+      <!-- preloader -->
+  	  <script type="text/javascript">
+          //<![CDATA[
+              $(window).load(function() { // makes sure the whole site is loaded
+                  $('#status').fadeOut(); // will first fade out the loading animation
+                  $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+                  $('body').delay(350).css({'overflow':'visible'});
+              })
+          //]]>
+      </script>
+
+      <!-- mobile touch -->
+      <script src="js/jquery.mobile.custom.min.js"></script>
+
+      <!-- scripts to remove click delays in touch UI's
+    	<script src="js/fastclick.js"></script>
+      <script>
+    		$(function() {
+    			FastClick.attach(document.body);
+    		});
+    	</script> -->
+
+      <!-- mobile menu button script -->
+      <script>
+        $(document).ready(function() {
+          $('#navBtn').click(function() {
+              if ($('#burger').hasClass('closed')) {
+                  $('#burger').removeClass('closed');
+                  $('#burger').addClass('open');
+              } else {
+                  $('#burger').removeClass('open');
+                  $('#burger').addClass('closed');
+              }
+          });
+        });
+    </script>
+
+    <!-- brand sytle control -->
+    <script>
+        $(document).ready(function(){
+            var scroll_start = 0;
+            var startchange = $('#shop-header');
+            var offset = startchange.offset();
+            $(document).scroll(function() {
+                scroll_start = $(this).scrollTop();
+                if(scroll_start > offset.top) {
+                    $('#logo').addClass('hidden');
+                } else {
+                    $('#logo').removeClass('hidden');
+                }
+            });
+        });
+    </script>
+
+    <!-- react slider code -->
+    <script type="text/babel">
+        var RecSlider = React.createClass({
+
+            render: function () {
+                var settings = {
+                    dots: false,
+                    arrows: true,
+                    draggable: true,
+                    infinite: true,
+                    swipe: true,
+                    swipeToSlide: true,
+                    touchMove: true,
+                    autoplay: true,
+                    autoplaySpeed: 4000
+                }
+
+                return (
+                    <div className='sWrapper'>
+                        <Slider {...settings}>
+                              <img src={this.props.src1} class="img-responsive" />
+                              <img src={this.props.src2} class="img-responsive" />
+                              <img src={this.props.src3} class="img-responsive" />
+                        </Slider>
+                    </div>
+                );
+            }
+        });
+
+        ReactDOM.render(<RecSlider src1='images/slide1.png' src2='images/slide2.png' src3='images/slide3.png' />, document.getElementById('Rslider'));
+
+    </script>
+
+    <!-- scroll reveal scripts -->
+    <script src="js/scrollReveal.min.js"></script>
+    <script>window.sr = new scrollReveal();</script>
+
+    <!--  shop app javascript -->
+    <script src="js/shopapp.js"></script>
+
+    <!--  single product modal view definition -->
+    <div class="modal fade" id="singleProductPg" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" id="xmark" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                       <div id="spWatchImg" class="col-xs-10 col-xs-offset-1">
+                           <img src="" class="img-responsive" alt="" />
+                       </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-8 col-xs-offset-2">
+                            <h2></h2>
+                            <h3>&#36;<span id="price"></span></h3>
+                            <button id="cartBtn" type="button" class="btn btn-default btn-lg">Add to Cart</button>
+                            <hr />
+                            <h4>Watch Details</h4>
+                            <p></p>
+                            <h4 class="phone">Specifications</h4>
+                            <ul id="detail-list" class="phone">
+                               <li><span>Bezel: </span><span id="bezel"></span></li>
+                               <li><span>Strap: </span><span id="strap"></span></li>
+                               <li><span>Dial Color: </span><span id="dialcolor"></span></li>
+                               <li><span>Waterproof: </span><span id="waterproof"></span></li>
+                               <li><span>Style: </span><span id="watchstyle"></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer hidden-xs">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
