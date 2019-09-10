@@ -1,0 +1,7 @@
+{
+    "env": {
+        "MONGO_ATLAS": "BoomMan225",
+        "DOMAIN": "localhost",
+        "JWT_KEY": "boomer18"
+    }
+}
