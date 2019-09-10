@@ -1,0 +1,272 @@
+/* === global settings ==== */
+
+.container {
+    width: 100% !important;
+}
+
+.bfade {
+    -webkit-animation-duration: 500ms;
+    -moz-animation-duration: 500ms;
+    -ms-animation-duration: 500ms;
+    animation-duration: 500ms;
+}
+
+.rfade {
+    -webkit-animation-duration: 1000ms;
+    -moz-animation-duration: 1000ms;
+    -ms-animation-duration: 1000ms;
+    animation-duration: 1000ms;
+}
+
+a, a:hover, a:focus, a:visited, link {
+	text-decoration: none !important;
+    cursor: pointer;
+}
+
+span {
+    color: #1e2024;
+}
+
+p.lead {
+  font-weight: normal !important;
+}
+
+button, button:active, button:hover, button:visited, .btn, .btn:active, .btn:hover, .btn:visited {
+  outline: none !important;
+  text-decoration: none !important;
+}
+
+h6 {
+    text-transform: none; !important;
+}
+
+.infoBtn {
+    color: #e91e63;
+    font-style: italic;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.glyphicon-thumbs-up {
+    cursor: pointer !important; 
+}
+
+/* === nav styles ==== */
+
+.container.top {
+    padding-left: 2.0em !important;
+    padding-right: 2.0em !important;
+}
+
+.navbar.navbar-transparent .navbar-collapse.collapsing {
+    -webkit-transition: all 150ms ease 0s !important;
+    -moz-transition: all 1ms ease 0s !important;
+    -ms-transition: all 200ms ease 0s !important;
+    transition: all 150ms ease 0s !important;
+}
+
+.navbar-collapse p {
+    margin-bottom: 0 !important;
+}
+
+.nav a {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 300;
+    line-height: 1.5em;
+}
+
+.nav a:hover {
+    color: #3d3d3d !important;
+}
+
+.navbar-brand {
+    font-size: 2.0em !important;
+    color: #fff;
+}
+
+.navbar-toggle span {
+    color: #fff !important;
+}
+
+.navbar .navbar-nav li a {
+    font-size: 1.5em !important;
+    text-transform: none !important;
+}
+
+.navbar a {
+    color: #fff !important;
+}
+
+.nav li a {
+    background: transparent !important;
+}
+
+/* === footer styles ==== */
+
+footer {
+    margin: 2.5em 1.5em 2.5em;
+    padding: 0 2.0em;
+}
+
+span.color {
+  font-family: 'LucidaHand', "Lucida Sans", Verdana, sans-serif;
+  color: #e91e63;
+  padding-right: 4px;
+}
+
+footer .socialBar {
+    float: left;
+}
+
+footer .copyright p {
+    float: right !important;
+    padding-top: 1.0em;
+}
+
+/* === social icons ==== */
+
+p.socialBar {
+  text-align: center;
+  margin-bottom: 0 !important;
+}
+
+.socialBar .fa {
+	padding-right:0;
+}
+
+.socialBar a  {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  margin-bottom: 1.25em;
+}
+
+.bigBadge {  /* === Note that this a combined tag, not a hierarchy tag like .badge .social */
+	background: #cccccc;
+	height: 2.0em;
+	width: 2.0em;
+    font-size: 1.25em;
+	text-align: center;
+	line-height: 2.1em !important;
+	padding: 0;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+	color: #ffffff;
+	display: inline-block;
+	min-width: 10px;
+	font-weight: bold !important;
+	white-space: nowrap;
+    vertical-align: baseline !important;
+}
+
+.fa-facebook, .fa-google-plus, .fa-twitter, .fa-instagram {
+    padding-top: 0.5em;
+}
+
+.twitter:hover {
+	background: #55acee;
+	color: #ffffff !important;
+}
+
+.btn-just-icon:hover {
+    color: #3d3d3d !important;
+}
+
+.facebook:hover {
+	background: #3b5998;
+	color: #ffffff !important;
+}
+
+.gplus:hover {
+	background: #db4b39;
+	color: #ffffff !important;
+}
+
+.socialBar a:visited {
+	color: #ffffff;
+}
+
+/* === material style overrides ==== */
+
+a:hover {
+    color: #e91e63 !important;
+}
+
+.main a {
+    color: #1e2024;
+}
+
+#homeBtn.btn {
+    display: inline-block;
+    margin-top: 1.5em;
+    border: 1px solid #000;
+    background-color: #f7f7f7;
+    font-weight: normal 700;
+}
+
+#homeBtn.btn:hover {
+    color: #ffffff !important;
+    background-color: #e91e63;
+    border: #e91e63 !important;
+    box-shadow: 0 2px 2px 0 rgba(153, 153, 153, 0.14), 0 3px 1px -2px rgba(153, 153, 153, 0.2), 0 1px 5px 0 rgba(153, 153, 153, 0.12);
+}
+
+/* === media queries ==== */
+
+@media screen and (min-width: 768px) {
+
+    span.linkList {
+        font-size: 1.375em !important;
+        margin-left: 0.75em !important;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    span.linkList {
+        font-size: 1.25em !important;
+        margin-left: 0.75em !important;
+    }
+
+    footer {
+        margin-top: 2.0em;
+    }
+
+       footer .copyright p {
+        float: right !important;
+        padding-top: 1.0em !important;
+    }
+}
+
+@media screen and (min-width: 600px) {
+
+    footer .socialBar {
+        float: left !important;
+    }
+
+    footer .copyright p {
+        float: right !important;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    span.linkList {
+        font-size: 1.0em !important;
+        margin-left: 0.5em !important;
+    }
+
+    h6 {
+        font-size: 0.75em !important;
+    }
+
+    footer .socialBar {
+        float: none !important;
+    }
+
+    footer .copyright p {
+        float: none !important;
+        text-align: center;
+    }
+
+}

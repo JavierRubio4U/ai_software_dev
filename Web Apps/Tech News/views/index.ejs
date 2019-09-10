@@ -1,0 +1,232 @@
+<html>
+    <head>
+        <title>Techno News</title>
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="/stylesheets/material.css" rel="stylesheet" type="text/css">
+        <link href="/stylesheets/solid.css" rel="stylesheet" type="text/css">
+        <link href="/stylesheets/style.css" rel="stylesheet" type="text/css">
+        <link href="/stylesheets/animate.css" rel="stylesheet" type="text/css">
+        <link href="/stylesheets/typo.css" rel="stylesheet" type="text/css">
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.js"></script>
+        <script src="/javascripts/angularApp.js"></script>
+
+        <style>
+            .navbar-header {float: none;}
+            .navbar-toggle {display: block;}
+            .navbar-collapse.collapse {display: none!important;}
+            .navbar-collapse.collapsing {overflow:visible !important;}
+            .navbar-nav {float: none!important;}
+            .navbar-nav>li {float: none;}
+            .navbar-collapse.collapse.in {display:block!important;}
+        </style>
+
+        <link rel="icon" href="/images/new-logo-black.png">
+    </head>
+    <body class="profile-page animated fadeIn bfade" ng-app="blondeLabNews">
+
+        <nav class="navbar navbar-transparent navbar-fixed-top navbar-color-on-scroll" ng-controller="NavCtrl">
+        	<div class="container top">
+            	<div class="navbar-header">
+            		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigationAJS">
+    		            <span class="icon-bar"></span>
+    		            <span class="icon-bar"></span>
+    		            <span class="icon-bar"></span>
+            		</button>
+            		<span class="navbar-brand">Techno News</span>
+            	</div>
+
+            	<div class="collapse navbar-collapse" id="navigationAJS">
+                    <hr />
+            		<ul class="nav navbar-nav navbar-right text-center">
+    					<li><a id="homeBtn" href="/#/home">Home</a></li>
+                        <li ng-show="isLoggedIn()"><a href="" ng-click="logOut()">Log Out</a></li>
+                        <li ng-hide="isLoggedIn()"><a href="/#/login">Log In</a></li>
+                        <li ng-hide="isLoggedIn()"><a href="/#/register">Register</a></li>
+            		</ul>
+                    <p class="sI text-center">
+                        <a href="https://www.facebook.com/infusedideas/" target="_blank" class="btn btn-simple btn-white btn-just-icon"><i class="fa fa-facebook"></i></a>
+                        <a href="https://plus.google.com/+Infusedideas1" target="_blank" class="btn btn-simple btn-white btn-just-icon"><i class="fa fa-google-plus"></i></a>
+                        <a href="https://twitter.com/infusedIdeas1" target="_blank" class="btn btn-simple btn-white btn-just-icon"><i class="fa fa-twitter"></i></a>
+                    </p>
+            	</div>
+        	</div>
+        </nav>
+
+        <div class="wrapper">
+            <div class="header header-filter" style="background-image: url('/images/tech.png');"></div>
+
+            <div class="main main-raised animated fadeIn rfade">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+
+                            <!-- below defines where the inline template should be rendered -->
+                            <ui-view></ui-view>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6">
+                           <p class="socialBar"><a href="https://www.facebook.com/infusedideas/" target="_blank" class="bigBadge facebook"><i class="fa fa-facebook"></i></a><a href="https://www.google.com/+Infusedideas1" target="_blank" class="bigBadge gplus"><i class="fa fa-google-plus"></i></a><a href="https://twitter.com/infusedIdeas1" target="_blank" class="bigBadge twitter"><i class="fa fa-twitter"></i></a></p>
+                       </div>
+                        <div class="col-sm-6 copyright">
+                            <p>&copy; 2016 <span class="color">infused Ideas</span></p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <!-- inline html home page template script -->
+        <script type="text/ng-template" id="/home.html">
+
+            <div class="page-header">
+                <h2>Techno News</h2>
+            </div>
+
+            <!-- Angular has a directive called ng-repeat that allows you to interate
+                over an array. Below we are iterating through the objects in the posts array. Note the array attribure add-ons. You can also add a filter to the list via the pipe and orderBy command; here using a negative to indicate sorting in reverse order. -->
+            <div ng-repeat="post in posts | orderBy: '-upvotes'">
+                <!-- ng-click is like jquery onclick and allows us to invoke a function upon click. Here we are passing the current instance of post to the function. -->
+                <span class="glyphicon glyphicon-thumbs-up" ng-click="incrementUpvotes(post)"></span> {{post.upvotes}}
+                <span style="font-size:1.5em; margin-left: 0.75em;">
+                    <a ng-show="post.link" href="{{post.link}}" target="_blank">{{post.title}}</a>
+                    <span ng-hide="post.link">{{post.title}}</span>
+                </span>
+                <span>
+                    <!--  <a href="#/posts/{{$index}}">Comments</a> when iterating over an array, the ng-repeat directive makes an $index variable available along with each item in the array. -->
+                    <a href="#/posts/{{post._id}}">Comments</a>  <!-- updated link path now that we are dealing with an actual database id -->
+                </span>
+                <span ng-show="post.author">
+                    posted by <a>{{post.author}}</a>
+                </span>
+            </div>
+            <!-- ng-submit is similar to the onclick jquery function, so it will invoke the addPost function upon the user clicking the form submit button.  -->
+
+            <div ng-hide="isLoggedIn()">
+                <br />
+                <br />
+                <h6>You need to <a href="/#/login"><span class="infoBtn">Log In</span></a> or <a href="/#/register"><span class="infoBtn">Register</span></a> before you can add a post.</h6>
+            </div>
+
+            <form ng-submit="addPost()" ng-show="isLoggedIn()" style="margin-top:2.0em;">
+                <h3>Add a new Post</h3>
+
+                <div class="form-group label-floating is-empty">
+                    <label class="control-label">Title</label>
+                    <input type="text" class="form-control" ng-model="title" />  <!-- ng-model binds to the corresponding data model definition defined in app.js scope variable. This will allow our controller to access the contents of the text box using $scope.title. -->
+                </div>
+                <div class="form-group label-floating is-empty">
+                    <label class="control-label">http://Link</label>
+                    <input type="text" class="form-control" ng-model="link" /> <!-- text field is data bound to the scope variable link -->
+                </div>
+                <button id="contactBtn" type="submit" class="btn btn-default btn-lg btn-raised">Post</button>
+            </form>
+
+        </script>
+
+        <script type="text/ng-template" id="/posts.html">
+
+            <div class="page-header">
+                <h3>
+                    <a ng-show="post.link" href="{{post.link}}" target="_blank">{{post.title}}</a>
+                    <span ng-hide="post.link">{{post.title}}</span>
+                </h3>
+            </div>
+
+            <div ng-repeat="comment in post.comments | orderBy:'-upvotes'">
+                <span class="glyphicon glyphicon-thumbs-up" ng-click="incrementUpvotes(comment)"></span> {{comment.upvotes}}
+
+                <span style="font-size:1.5em; margin-left:0.75em;">
+                  {{comment.body}}
+                </span> - by {{comment.author}}
+            </div>
+
+            <form ng-submit="addComment()" ng-show="isLoggedIn()" style="margin-top:2.0em;">
+                <h3>Add a new comment</h3>
+
+                <div class="form-group label-floating is-empty">
+                    <label class="control-label">Comment</label>
+                    <input type="text" class="form-control" ng-model="body"></input>
+                </div>
+                <button id="contactBtn" type="submit" class="btn btn-default btn-lg btn-raised">Post Comment</button>
+            </form>
+
+        </script>
+
+        <!-- registration template -->
+        <script type="text/ng-template" id="/register.html">
+
+            <div class="page-header">
+                <h1>Techno News</h1>
+            </div>
+
+            <div ng-show="error" class="alert alert-danger row">
+                <span>{{error.message}}</span>
+            </div>
+
+            <form ng-submit="register()" style="margin-top:2.0em;">
+                <h3>Register</h3>
+
+                <div class="form-group label-floating is-empty">
+                    <label class="control-label">User Name</label>
+                    <input type="text" class="form-control" ng-model="user.username" />
+                </div>
+                <div class="form-group label-floating is-empty">
+                    <label class="control-label">Password</label>
+                    <input type="password" class="form-control" ng-model="user.password" />
+                </div>
+                <button id="contactBtn" type="submit" class="btn btn-default btn-lg btn-raised">Sign Up</button>
+            </form>
+
+        </script>
+
+        <!-- login template -->
+        <script type="text/ng-template" id="/login.html">
+
+            <div class="page-header">
+                <h1>Techno News</h1>
+            </div>
+
+            <div ng-show="error" class="alert alert-danger row">
+                <span>{{error.message}}</span>
+            </div>
+
+            <form ng-submit="logIn()" style="margin-top:2.0em;">
+                <h3>Log In</h3>
+
+                <div class="form-group label-floating is-empty">
+                    <label class="control-label">User Name</label>
+                    <input type="text" class="form-control" ng-model="user.username" />
+                </div>
+                <div class="form-group label-floating is-empty">
+                    <label class="control-label">Password</label>
+                    <input type="password" class="form-control" ng-model="user.password" />
+                </div>
+                <button id="contactBtn" type="submit" class="btn btn-default btn-lg btn-raised">Log In</button>
+            </form>
+
+        </script>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="/javascripts/material.min.js"></script>
+        <script src="/javascripts/material-kit.js"></script>
+        <script src="/javascripts/ie10-viewport-bug-workaround.js"></script>
+        <script src="/javascripts/jquery.mobile.custom.min.js"></script>
+
+        <script>
+            $('.nav a').on('click', function(){
+                if($('.navbar-toggle').css('display') != 'none')
+                $('.navbar-toggle').click();
+            });
+      </script>
+
+    </body>
+</html>
